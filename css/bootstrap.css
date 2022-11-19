@@ -3493,10 +3493,13 @@ fieldset:disabled .btn {
 .dropdown,
 .dropstart {
   position: relative;
+  margin-right: 10px;
+  padding: 0.28rem 1rem;
 }
 
 .dropdown-toggle {
   white-space: nowrap;
+  padding: 3% 8%;
 }
 
 .dropdown-toggle::after {
