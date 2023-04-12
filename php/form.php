@@ -11,6 +11,7 @@ if(isset($_POST['name']) && isset($_POST['_replyto']) && isset($_POST['message']
     $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
     $headers = "From:" . $from;
     if(mail($to,$subject,$message,$headers)){
+        header("Location: https://swissds.ch/");
         echo "<script>alert('Mail Sent. Thank you, we will contact you shortly.');</script>";
     } else {
         echo "There was an error sending the email.";
