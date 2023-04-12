@@ -6,7 +6,7 @@ var_dump($_POST);
 if(isset($_POST['name'])){
     echo "hola";
     $to = "nicolas.cozzarin@swissds.ch"; // this is the email address you want to send the form to
-    $from = $_POST['email']; // this is the sender's email address
+    $from = $_POST['_replyto']; // this is the sender's email address
     $name = $_POST['name'];
     $subject = "New message from your website";
     $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
