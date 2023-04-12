@@ -2,6 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 echo "hola";
+var_dump($_POST);
 if(isset($_POST['submit'])){
     echo "hola";
     $to = "nicolas.cozzarin@swissds.ch"; // this is the email address you want to send the form to
