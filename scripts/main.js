@@ -88,7 +88,13 @@
     )
   }))
 
-  // Add your javascript here
 
 
 })();
+
+function closeMenu() {
+  var navbarCollapse = document.getElementById('navbarSupportedContent');
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+  }
+}
