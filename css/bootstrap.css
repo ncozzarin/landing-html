@@ -9061,6 +9061,7 @@ fieldset:disabled .btn {
   }
   .p-md-3 {
     padding: 2rem !important;
+    height: 550px;
   }
   .p-md-4 {
     padding: 3rem !important;
